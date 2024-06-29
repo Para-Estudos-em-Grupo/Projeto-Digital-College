@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 
 
@@ -148,6 +149,7 @@ main {
     background-color: #c92071;
     color: #fff;
     border-radius: 8px;
+    margin-top: 20px;
 }
 .propaganda__inicial {
     display: flex;
@@ -196,6 +198,15 @@ main {
     color: #1f1f1f;
     font-weight: 800;
     line-height: 66px;
+}
+.informacoes__propaganda__inicial h4::after {
+    position: relative;
+    content: "\01f525";
+    font-family: "Noto Color Emoji", sans-serif;
+    font-size: 60px;
+    bottom: 8px;
+    left: 5px;
+
 }
 .informacoes__propaganda__inicial p {
     font-size: 18px;
