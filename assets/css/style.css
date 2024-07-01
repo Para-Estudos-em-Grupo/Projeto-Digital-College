@@ -16,14 +16,18 @@
 body {
     align-items: center;
     width: 100vw;
+    background-color: #f9f8fe;
 }
 header {
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #fff;
 }
 .max__width {
-    width: 1340px;
+    position: relative;
+    width: 1240px;
+    height: auto;
 }
 /***** End GERAL *****/
 
@@ -138,11 +142,76 @@ main {
     flex-direction: column;
     width: 100%;
 }
+.titulo__sessao {
+    font-size: 24px;
+    color: #474747;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.espaco__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+}
+.card__destaque {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 405px;
+    padding: 34px 0 35px 30px;
+    border-radius: 8px;
+    background-color: #d8e3f2;
+    gap: 10px;
+}
+.aviso__desconto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 96px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 29px;
+    color: #474747;
+    background-color: #e7ff86;
+}
+.box__titulo__card__destaque {
+    height: 72px;
+    width: 184px;
+}
+.titulo__card__destaque {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.botao__card__destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 153px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #c92071;
+    margin-top: 20px;
+    z-index: 1;
+}
+.imagem__card__destaque {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+}
 .botao__link__main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 48px;
     width: 220px;
     font-size: 16px;
     font-weight: 500;
@@ -159,7 +228,7 @@ main {
     background-color: #f5f5f5;
 }
 .colecoes__destaque {
-    height: 620px; /*valor temporário*/
+    padding-top: 38px;
 }
 .produtos__alta {
     height: 620px; /*valor temporário*/
@@ -169,15 +238,21 @@ main {
 }
 .child__propaganda__inicial {
     display: flex;
-    position: relative;
-    gap: 70px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 53px;
 }
 .child__propaganda__inicial .ornamento {
     position: absolute;
     height: 140px;
     width: 140px;
-    right: 30px;
+    right: -37px;
     top: 78px;
+}
+.informacoes__imagem {
+    display: flex;
+    flex-direction: inline;
+    height: 100%;
 }
 .informacoes__propaganda__inicial {
     display: flex;
@@ -206,21 +281,60 @@ main {
     font-size: 60px;
     bottom: 8px;
     left: 5px;
-
 }
 .informacoes__propaganda__inicial p {
     font-size: 18px;
     line-height: 34px;
 }
 .imagem__propaganda__inicial {
-    padding-top: 124px;
+    position: relative;
+    height: 500px;
+    margin: 124px 0 0 65px;
+}
+.imagem__propaganda__inicial img {
+    width: 550px;
 }
 .grupo__carrossel {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     height: 12px;
-    width: 78px;
-    bottom: 53px;
-    margin: 0 50%;
+    width: 100%;
+}
+.colecoes__destaque__inferior {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 100px;
+}
+.grupo__cards__colecoes {
+    display: flex;
+    flex-direction: inline;
+    gap: 48px;
+    width: 712px;
+    height: 138px;
+}
+.card__colecoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 138px;
+    width: 104px;
+}
+.card__colecoes p {
+    font-size: 14px;
+    color: #474747;
+    font-weight: 700;
+}
+.circulo__card__sessoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    height: 102px;
+    width: 102px;
+    background-color: #fff;
+    box-shadow: 0px 4px 25px 0px rgb(0, 0, 0, 0.05)
 }
 /***** End Section *****/
 
