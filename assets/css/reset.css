@@ -9,5 +9,5 @@ html {
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }

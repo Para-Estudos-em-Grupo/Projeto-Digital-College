@@ -71,8 +71,24 @@ nav {
 }
 .lista__menu {
     display: flex;
-    flex-direction: inline;
-    gap: 32px;
+    border: 1px solid yellow;
+}
+.lista__menu li {
+    padding: 5px;
+    border: 1px solid red;
+    margin-right: 28px;
+}
+.link__lista__menu {
+    transition: 0.3s;
+    border:1px solid blue;
+    text-align: center;
+}
+.link__lista__menu:hover {
+    color: var(--primary);
+    text-decoration: 2px solid underline;
+    font-weight: 600;
+    text-underline-offset: 8px;
+    transition: 0.3s;
 }
 .caixa__pesquisa__nav {
     position: relative;
@@ -122,13 +138,6 @@ nav {
     background-color: var(--primary);
     color: #fff;
     border-radius: 8px;
-}
-.link__lista__menu:hover {
-    color: var(--primary);
-    text-decoration: 2px solid underline;
-    font-weight: 600;
-    text-underline-offset: 8px;
-    transition: 0.2s;
 }
 .carrinho__nav {
     position: relative;
@@ -357,66 +366,66 @@ main {
     background-image: url(../img/camisa-destaque-light-gray.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .camisa:hover {
     background-image: url(../img/camisa-destaque-primary.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .calca {
     background-image: url(../img/calca-destaque-light-gray.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .calca:hover {
     background-image: url(../img/calca-destaque-primary.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .bone {
     background-image: url(../img/bone-destaque-light-gray.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .bone:hover {
     background-image: url(../img/bone-destaque-primary.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .headphone {
     background-image: url(../img/headphone-destaque-light-gray.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .headphone:hover {
     background-image: url(../img/headphone-destaque-primary.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .tenis {
     background-image: url(../img/sapato-destaque-light-gray.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .tenis:hover {
     background-image: url(../img/sapato-destaque-primary.png);
     background-position: center center;
     background-repeat: no-repeat;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 /* SESSÃO PRODUTOS EM ALTA */
 .titulo__link {
@@ -424,27 +433,32 @@ main {
     justify-content: space-between;
     margin-top: 123px;
 }
+.titulo__link .titulo__sessao {
+    margin-bottom: 0;
+}
 .ver__todos {
+    position: relative;
+    right: 9px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 34px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .ver__todos:hover {
     color: var(--primary);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .ver__todos::after {
     content: url(../img/arrow-dark-gray-2.png);
-    height: 24px;
     width: 24px;
     position: relative;
     top: 5px;
     left: 10px;
+    transition: 0.3s;
 }
 .ver__todos:hover::after {
     content: url(../img/arrow-primary.png);
-    transition: 0.2s;
+    image-rendering: auto;
+    transition: 0.3s;
 }
 /***** End Section *****/
 
