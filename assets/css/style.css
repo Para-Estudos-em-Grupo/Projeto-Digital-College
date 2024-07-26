@@ -7,6 +7,7 @@
 
 
 
+<<<<<<< HEAD
 :root {
     --primary: #c92071;
     --dark-gray-2: #474747;
@@ -17,6 +18,29 @@
     --warning: #F6AA1C;
     --erro: #EE4266;
 }
+=======
+/***** VARIÁVEIS *****/
+:root {
+    /* CORES */
+    --dark-gray: #1f1f1f;
+    --dark-gray-2: #474747;
+    --dark-gray-3: #666666;
+    --light-gray: #8f8f8f;
+    --light-gray-2: #CCCCCC;
+    --light-gray-3: #F5F5F5;
+    --primary: #c92071;
+    --secondary: #b5b6f2;
+    --erro: #EE4266;
+    --success: #52ca76;
+    --warning: #F6AA1C;
+    --primary-gradient: ;
+    --secondary-gradient: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0.00) 60%);
+    --white: #fff;
+    --Tertiary: #991956;
+}
+/***** End VARIÁVEIS *****/
+
+>>>>>>> main
 
 
 
@@ -26,7 +50,10 @@
 * {
     font-family: "Inter", sans-serif;
     letter-spacing: 0.75px;
+<<<<<<< HEAD
     color: var(--dark-gray-2);
+=======
+>>>>>>> main
 }
 body {
     align-items: center;
@@ -43,6 +70,12 @@ header {
     position: relative;
     width: 1240px;
     height: auto;
+<<<<<<< HEAD
+=======
+}
+a {
+    color: var(--dark-gray-2);
+>>>>>>> main
 }
 /***** End GERAL *****/
 
@@ -71,6 +104,7 @@ nav {
 }
 .lista__menu {
     display: flex;
+<<<<<<< HEAD
     border: 1px solid yellow;
 }
 .lista__menu li {
@@ -82,6 +116,38 @@ nav {
     transition: 0.3s;
     border:1px solid blue;
     text-align: center;
+}
+.link__lista__menu:hover {
+    color: var(--primary);
+    text-decoration: 2px solid underline;
+    font-weight: 600;
+    text-underline-offset: 8px;
+    transition: 0.3s;
+=======
+    gap: 32px;
+>>>>>>> main
+}
+.lista__menu li {
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+.link__lista__menu {
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.lista__menu li:nth-child(1) {
+    width: 83px;
+}
+.lista__menu li:nth-child(2) {
+    width: 56px;
+}
+.lista__menu li:nth-child(3) {
+    width: 99px;
+}
+.lista__menu li:nth-child(4) {
+    width: 124px;
 }
 .link__lista__menu:hover {
     color: var(--primary);
@@ -220,7 +286,11 @@ main {
     font-size: 16px;
     font-weight: 700;
     border-radius: 8px;
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: var(--white);
+>>>>>>> main
     color: var(--primary);
     margin-top: 20px;
     z-index: 1;
@@ -240,7 +310,11 @@ main {
     font-size: 16px;
     font-weight: 500;
     background-color: var(--primary);
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: var(--white);
+>>>>>>> main
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -253,12 +327,15 @@ main {
 }
 .colecoes__destaque {
     padding-top: 38px;
+<<<<<<< HEAD
 }
 .produtos__alta {
     height: 620px; /*valor temporário*/
 }
 .ofertas {
     height: 620px; /*valor temporário*/
+=======
+>>>>>>> main
 }
 .child__propaganda__inicial {
     display: flex;
@@ -292,13 +369,14 @@ main {
     font-weight: 700;
     line-height: 24px;
 }
-.informacoes__propaganda__inicial h4 {
-    font-size: 64px;
-    color: #1f1f1f;
+.informacoes__propaganda__inicial h1 {
+    font-family: "Inter", sans-serif;
     font-weight: 800;
+    font-size: 64px;
+    letter-spacing: 1px;
     line-height: 66px;
 }
-.informacoes__propaganda__inicial h4::after {
+.informacoes__propaganda__inicial h1::after {
     position: relative;
     content: "\01f525";
     font-family: "Noto Color Emoji", sans-serif;
@@ -358,7 +436,11 @@ main {
     border-radius: 150px;
     height: 102px;
     width: 102px;
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: var(--white);
+>>>>>>> main
     box-shadow: 0px 4px 25px 0px rgb(0, 0, 0, 0.05);
 }
 /* ICONES - COLEÇÃO DESTAQUE INFERIOR */
@@ -459,6 +541,125 @@ main {
     content: url(../img/arrow-primary.png);
     image-rendering: auto;
     transition: 0.3s;
+<<<<<<< HEAD
+=======
+}
+.cards__produtos__alta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 24px;
+}
+.card__produto {
+    width: 292px;
+    height: 439px;
+}
+.background__card__produto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 321px;
+    background-color: var(--white);
+}
+.background__card__produto .aviso__desconto {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.background__card__produto img {
+    align-self: center;
+    margin: 23% 0;
+}
+.card__produto p:nth-child(2) {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--light-gray);
+}
+.card__produto p:nth-child(3) {
+    font-size: 24px;
+    color: var(--dark-gray-2);
+    line-height: 38px;
+}
+.card__produto p:nth-child(4) {
+    position: relative;
+    left: 11px;
+    content: "$200";
+    font-size: 24px;
+    color: var(--dark-gray);
+    font-weight: 700;
+}
+.card__produto p:nth-child(4)::before {
+    position: relative;
+    right: 11px;
+    content: "$200";
+    font-size: 24px;
+    color: var(--light-gray);
+    font-weight: 400;
+    text-decoration-line: line-through;
+}
+/* SESSÃO OFERTAS */
+.ofertas {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    height: 553px;
+    width: 100%;
+    background-color: var(--white);
+}
+.ofertas__caixa {
+    display: flex;
+    flex-direction: row;
+    padding-top: 87px;
+    gap: 97px;
+}
+.ofertas__elipse__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 466px;
+    height: 466px;
+    border-radius: 466px;
+    background: var(--secondary-gradient);
+}
+.ofertas__imagem {
+    width: 967px;
+    position: relative;
+    top: -40px;
+    left: -24px;
+}
+.coluna__texto {
+    margin-top: 19px;
+    width: 589px;
+    height: 341px;
+}
+.coluna__texto h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--primary);
+    margin-bottom: 17px;
+}
+.coluna__texto h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.coluna__texto p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.coluna__texto a {
+    width: 200px;
+    height: 40px;
+>>>>>>> main
 }
 /***** End Section *****/
 
@@ -470,9 +671,97 @@ main {
 /***** RODAPÉ *****/
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 72px 100px 0 100px;
+    align-items: center;
     height: 454px;
     width: 100%;
-    background-color: #1f1f1f;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+footer article ul li a {
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.caixa__footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer__superior {
+    display: flex;
+    flex-direction: row;
+}
+.footer__marca {
+    display: flex;
+    flex-direction: column;
+}
+.footer__marca img {
+    width: 253px;
+    height: 44px;
+    margin-bottom: 35px;
+}
+.footer__marca p {
+    font-size: 16px;
+    color: var(--white);
+    letter-spacing: none;
+    line-height: 26px;
+    width: 307px;
+    height: 78px;
+    margin-bottom: 40px;
+}
+.footer__marca .redes__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 124.12px;
+    height: 20.53px;
+}
+.redes__footer a img {
+    height: 20.53px;
+    width: auto;
+}
+.footer__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 278px;
+    width: 135px;
+    margin-left: 205px;
+}
+.footer__informacoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 240px;
+    width: 96px;
+    margin-left: 102px;
+}
+.footer__categorias ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 168px;
+    width: 233px;
+    margin-left: 168px;
+    font-weight: 300;
+}
+.linha__footer {
+    margin-top: 34px;
+    border-bottom: 1px solid var(--white);
+    width: 1240px;
+}
+.footer__inferior {
+    margin-top: 23px;
 }
 /***** End RODAPÉ *****/
