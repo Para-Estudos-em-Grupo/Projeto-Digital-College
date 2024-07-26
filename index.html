@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Store</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet preconnect" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet preconnect" type="text/css" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@
                     <fieldset class="caixa__pesquisa__nav">
                         <input class="input__pesquisa__nav" type="text" name="pesquisa" id="pesquisa__nav" placeholder="Pesquisar produtos...">
                             <img class="lupa__pesquisa__nav" src="./assets/img/Search.svg" alt="">
-                        <label class="label__pesquisa__nav" for="pesquisa__nav"></label>
                         <img src="" alt="">
                     </fieldset>
                 </div>
@@ -40,10 +39,10 @@
 
             <div class="nav__inferior">
                 <ul class="lista__menu">
-                    <li><a class="link__lista__menu" href="">Produtos</a></li>
-                    <li><a class="link__lista__menu" href="">Home</a></li>
-                    <li><a class="link__lista__menu" href="">Categorias</a></li>
-                    <li><a class="link__lista__menu" href="">Meus Pedidos</a></li>
+                    <li><a class="link__lista__menu" href="/">Produtos</a></li>
+                    <li><a class="link__lista__menu" href="/">Home</a></li>
+                    <li><a class="link__lista__menu" href="/">Categorias</a></li>
+                    <li><a class="link__lista__menu" href="/">Meus Pedidos</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,33 +56,183 @@
 
     <!-- ========== Start MAIN ========== -->
     <main>
+        <!-- SESSÃO INICIAL COM CARROSSEL -->
         <section class="propaganda__inicial">
             <div class="child__propaganda__inicial max__width">
-                <div class="informacoes__propaganda__inicial max__width">
-                    <h3>Melhores ofertas personalizadas</h3>
-                    <h4>Queima de stoque Nike</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit olestiae quis in voluptate illo usto vero.</p>
-                    <a class="botao__link__main" href="">Ver ofertas</a>
+                <div class="informacoes__imagem max__width">
+                    <div class="informacoes__propaganda__inicial">
+                        <h3>Melhores ofertas personalizadas</h3>
+                        <h1>Queima de stoque Nike</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit olestiae quis in voluptate illo usto vero.</p>
+                        <a class="botao__link__main" href="">Ver ofertas</a>
+                    </div>
+                    <div class="imagem__propaganda__inicial">
+                        <img src="./assets/img/White-Sneakers-PNG-Clipart 1.png" alt="">
+                    </div>
+                    <div class="ornamento">
+                        <img src="./assets/img/Ornament 11.png" alt="">
+                    </div>
                 </div>
-                <div class="imagem__propaganda__inicial">
-                    <img src="./assets/img/White-Sneakers-PNG-Clipart 1.png" alt="">
+                <div class="grupo__carrossel">
+                    <img src="./assets/img/Group 53582.png" alt="">
                 </div>
-                <img class="ornamento" src="./assets/img/Ornament 11.png" alt="">
-                <img class="grupo__carrossel" src="./assets/img/Group 53582.png" alt="">
+            </div>
+        </section>
+        <!-- COLEÇÃO DESTAQUE SUPERIOR -->
+        <section class="colecoes__destaque max__width">
+            <h4 class="titulo__sessao">Coleções em destaque</h4>
+            <div class="espaco__cards">
+                <div class="card__destaque">
+                    <div class="aviso__desconto">30% OFF</div>
+                    <div class="box__titulo__card__destaque">
+                        <h3 class="titulo__card__destaque">Novo drop Supreme</h3>
+                    </div>
+                    <a class="botao__card__destaque" href="">Comprar</a>
+                    <img class="imagem__card__destaque" src="./assets/img/blusa-propaganda.png" alt="">
+                </div>
+                <div class="card__destaque">
+                    <div class="aviso__desconto">30% OFF</div>
+                    <div class="box__titulo__card__destaque">
+                        <h3 class="titulo__card__destaque">Coleção Adidas</h3>
+                    </div>
+                    <a class="botao__card__destaque" href="">Comprar</a>
+                    <img class="imagem__card__destaque" src="./assets/img/sapato-propaganda.png" alt="">
+                </div>
+                <div class="card__destaque">
+                    <div class="aviso__desconto">30% OFF</div>
+                    <div class="box__titulo__card__destaque">
+                        <h3 class="titulo__card__destaque">Novo Beats Bass</h3>
+                    </div>
+                    <a class="botao__card__destaque" href="">Comprar</a>
+                    <img class="imagem__card__destaque" src="./assets/img/fone-propaganda.png" alt="">
+                </div>
             </div>
 
+            <!-- COLEÇÃO DESTAQUE INFERIOR -->
+            <div class="colecoes__destaque__inferior">
+                <h4 class="titulo__sessao">Coleções em destaque</h4>
+                <div class="grupo__cards__colecoes">
+                    <div class="card__colecoes">
+                        <div class="circulo__card__sessoes camisa">
+                        </div>
+                        <p>Camisetas</p>
+                    </div>
+                    <div class="card__colecoes">
+                        <div class="circulo__card__sessoes calca">
+                        </div>
+                        <p>Calças</p>
+                    </div>
+                    <div class="card__colecoes">
+                        <div class="circulo__card__sessoes bone">
+                        </div>
+                        <p>Bonés</p>
+                    </div>
+                    <div class="card__colecoes">
+                        <div class="circulo__card__sessoes headphone">
+                        </div>
+                        <p>Headphones</p>
+                    </div>
+                    <div class="card__colecoes">
+                        <div class="circulo__card__sessoes tenis">
+                        </div>
+                        <p>Tênis</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="colecoes__destaque max__width">
-            
-        </section>
-
+        <!-- SESSÃO PRODUTOS EM ALTA -->
         <section class="produtos__alta max__width">
-
+            <div class="titulo__link">
+                <h4 class="titulo__sessao">Produtos em alta</h4>
+                    <a class="ver__todos" href="/">Ver todos</a>
+            </div>
+            <div class="cards__produtos__alta max__width">
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <span class="aviso__desconto">30% OFF</span>
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <span class="aviso__desconto">30% OFF</span>
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+                <div class="card__produto">
+                    <div class="background__card__produto">
+                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
+                    </div>
+                    <p>Tênis</p>
+                    <p>K-Swiss V8 - Masculino</p>
+                    <p>$100</p>
+                </div>
+            </div>
         </section>
-
-        <section class="ofertas max__width">
-
+        <!-- SESSÃO OFERTA ESPECIAL -->
+        <section class="ofertas">
+            <div class="ofertas__caixa max__width">
+                <article class="ofertas__imagem__col__esq">
+                        <div class="ofertas__elipse__imagem">
+                            <img class="ofertas__imagem" src="./assets/img/Air-Jordan.png" alt="">
+                        </div>
+                </article>
+                <article class="ofertas__texto__col__dir">
+                    <div class="coluna__texto">
+                        <h4>Oferta especial</h4>
+                        <h3>Air Jordan edição de colecionador</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit illo laudantium sed voluptates et voluptate sint rem consequuntur rerum eveniet non quo magni iste cupiditate, porro dolor autem inventore repellat.</p>
+                        <a class="botao__link__main" href="">Ver Oferta</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <!-- ========== End MAIN ========== -->
@@ -95,27 +244,53 @@
 
     <!-- ========== Start RODAPÉ ========== -->
     <footer>
-        <div class="caixa__rodape max__width">
-            <div>
-                <section class="marca">
-    
-                </section>
+        <div class="caixa__footer max__width">
+            <div class="footer__superior">
+                <article class="footer__marca">
+                    <img src="./assets/img/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita eligendi nihil.</p>
+                    <figure class="redes__footer">
+                        <a target="_blank" rel="noopener noreferrer" href="https://pt-br.facebook.com/"><img src="./assets/img/footer-facebook.png" alt=""></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><img src="./assets/img/footer-instagram.png" alt=""></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://x.com/"><img src="./assets/img/footer-X.png" alt=""></a>
+                    </figure>
+                </article>
         
-                <section class="informacoes">
+                <article class="footer__informacoes">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="">Sobre Drip Store</a></li>
+                        <li><a href="">Segurança</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Trabalhe conosco</a></li>
+                        <li><a href="">Meus Pedidos</a></li>
+                    </ul>
+                </article>
         
-                </section>
+                <article class="footer__categorias">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="">Camisetas</a></li>
+                        <li><a href="">Calças</a></li>
+                        <li><a href="">Bonés</a></li>
+                        <li><a href="">Headphones</a></li>
+                        <li><a href="">Tênis</a></li>
+                    </ul>
+                </article>
         
-                <section class="categorias">
-        
-                </section>
-        
-                <section class="contato">
-        
-                </section>
+                <article class="footer__contato">
+                    <h4>Contato</h4>
+                    <address>
+                        Av. Santos Dumont, 1510 -1 andar - Aldeota, Fortaleza - CE, 60150-161
+                    </address>
+                    <p>(85) 3051-3411</p>
+                </article>
             </div>
-            <div>
-                <p>&copy; 2024 Digital College</p>
-            </div>
+        </div>
+        <div class="linha__footer"></div>
+        <div class="footer__inferior">
+            <p>&copy; 2024 Armando Patricio, Vivian Brito e Luis Claudênio</p>
         </div>
     </footer>
     <!-- ========== End RODAPÉ ========== -->

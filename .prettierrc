@@ -1,0 +1,58 @@
+
+{
+    "singleQuote": true,
+    "semi": true,
+    "tabWidth": 4,
+    "html": {
+        "attributeValueSingleQuotes": true,
+        "bracketSpacing": true,
+        "indentWidth": 4, 
+        "spaceBeforeAttributeColon": false, 
+        "spaceInEmptyParentheses": false
+    },
+    "css": {
+        "declarationColonSpacing": "always",
+        "indentWidth": 4,
+        "propertyOrder": [
+            "position",
+            "display",
+            "flex",
+            "grid",
+            "box-sizing",
+            "width",
+            "height",
+            "padding",
+            "margin",
+            "font",
+            "background",
+            "border",
+            "outline",
+            "list-item-position",
+            "list-item-type",
+            "text",
+            "table",
+            "cursor",
+            "user-select",
+            "resize",
+            "visibility",
+            "pointer-events",
+            "z-index",
+            "transition",
+            "transform",
+            "animation",
+            "overflow",
+            "flex-direction",
+            "flex-wrap",
+            "justify-content",
+            "align-items",
+            "align-content",
+            "gap",
+            "column-gap",
+            "row-gap"
+            ],
+        "ruleSpaces": 4,
+        "selectorListSpacing": "always",
+        "valueListCommaSpacing": "always"
+    }
+}
+
