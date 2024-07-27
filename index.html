@@ -14,36 +14,35 @@
 <body>
     <!-- ========== Start CABEÇALHO ========== -->
     <header>
-        <nav class="max__width">
+        <nav class="nav-desktop">
             <div class="nav__superior">
                 <div class="logo__pesquisa">
-                    <h1>
-                        <img src="./assets/img/logo.png" alt="">
-                    </h1>
+                    <picture>
+                        <img src="./assets/img/logo.png" alt="logo da empresa Digital Store.">
+                    </picture>
                     <fieldset class="caixa__pesquisa__nav">
                         <input class="input__pesquisa__nav" type="text" name="pesquisa" id="pesquisa__nav" placeholder="Pesquisar produtos...">
                             <img class="lupa__pesquisa__nav" src="./assets/img/Search.svg" alt="">
-                        <img src="" alt="">
                     </fieldset>
+                    <div class="links__nav">
+                        <a class="link__nav__cadastro" href="#">Cadastre-se</a>
+                        <a class="link__nav__entrar" href="#">Entrar</a>
+                    </div>
+                    <div class="carrinho__nav">
+                        <img class="imagem__carrinho__nav" src="./assets/img/carrinho.png" alt="">
+                        <h3 class="digito__carrinho__nav">2</h3>
+                    </div>
                 </div>
     
-                <div class="links__nav">
-                    <a class="link__nav__cadastro" href="">Cadastre-se</a>
-                    <a class="link__nav__entrar" href="">Entrar</a>
-                </div>
-                <div class="carrinho__nav">
-                    <img class="imagem__carrinho__nav" src="./assets/img/carrinho.png" alt="">
-                    <h3 class="digito__carrinho__nav">2</h3>
-                </div>
+
+
             </div>
 
             <div class="nav__inferior">
-                <ul class="lista__menu">
-                    <li><a class="link__lista__menu" href="/">Produtos</a></li>
-                    <li><a class="link__lista__menu" href="/">Home</a></li>
-                    <li><a class="link__lista__menu" href="/">Categorias</a></li>
-                    <li><a class="link__lista__menu" href="/">Meus Pedidos</a></li>
-                </ul>
+                <a class="lista__menu__link" href="#">Home</a>
+                <a class="lista__menu__link" href="#">Produtos</a>
+                <a class="lista__menu__link" href="#">Categorias</a>
+                <a class="lista__menu__link" href="#">Meus Pedidos</a>
             </div>
         </nav>
     </header>

@@ -11,3 +11,6 @@ html {
     list-style-type: none;
     box-sizing: inherit;
 }
+header, a {
+    box-sizing: inherit;
+}
