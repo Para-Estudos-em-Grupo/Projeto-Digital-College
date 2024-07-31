@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- ========== Start CABEÇALHO ========== -->
     <header>
@@ -25,8 +27,8 @@
                         <img class="lupa__pesquisa__nav" src="./assets/img/Search.svg" alt="">
                     </fieldset>
                     <div class="links__nav">
-                        <a class="link__nav__cadastro" href="#">Cadastre-se</a>
-                        <a class="link__nav__entrar" href="#">Entrar</a>
+                        <a class="link__cadastro" href="#">Cadastre-se</a>
+                        <button class="text_x-s_b primary-btn" href="#">Entrar</button>
                     </div>
                     <div class="carrinho__nav">
                         <img class="imagem__carrinho__nav" src="./assets/img/carrinho.png" alt="">
@@ -53,15 +55,15 @@
 
     <!-- ========== Start MAIN ========== -->
     <main>
-        <!-- SESSÃO INICIAL COM CARROSSEL -->
+        <!-- SEÇÃO INICIAL COM CARROSSEL -->
         <section class="propaganda__inicial">
             <div class="propaganda__inicial__child">
-                <div class="informacoes__imagem">
+                <div class="propaganda__inicial__informacoes__imagem">
                     <article class="propaganda__inicial__informacoes">
-                        <h3>Melhores ofertas personalizadas</h3>
-                        <h1>Queima de stoque Nike</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit olestiae quis in voluptate illo usto vero.</p>
-                        <button class="botao__link__main" target="_blank" rel="noopener noreferrer" href="#">Ver ofertas</button>
+                        <h5 class="text_s_b">Melhores ofertas personalizadas</h5>
+                        <h1 class="h1_t-desktop">Queima de stoque Nike</h1>
+                        <p class="text_m-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit olestiae quis in voluptate illo usto vero.</p>
+                        <button class="primary-btn text_s_b" target="_blank" rel="noopener noreferrer" href="#">Ver ofertas</button>
                     </article>
                     <picture class="propaganda__inicial__imagem">
                         <img src="./assets/img/White-Sneakers-PNG-Clipart 1.png" alt="sapato nike">
@@ -75,39 +77,40 @@
                 </div>
             </div>
         </section>
+
         <!-- COLEÇÃO DESTAQUE SUPERIOR -->
-        <section class="colecoes__destaque max__width">
-            <h4 class="titulo__sessao">Coleções em destaque</h4>
+        <section class="colecoes__destaque">
+            <h4 class="titulo__secao">Coleções em destaque</h4>
             <div class="espaco__cards">
                 <div class="card__destaque">
                     <div class="aviso__desconto">30% OFF</div>
-                    <div class="box__titulo__card__destaque">
-                        <h3 class="titulo__card__destaque">Novo drop Supreme</h3>
+                    <div class="card__destaque__caixa__titulo">
+                        <h3 class="card__destaque__titulo">Novo drop Supreme</h3>
                     </div>
-                    <a class="botao__card__destaque" href="">Comprar</a>
-                    <img class="imagem__card__destaque" src="./assets/img/blusa-propaganda.png" alt="">
+                    <button class="card__destaque__botao" href="">Comprar</button>
+                    <img class="card__destaque__imagem" src="./assets/img/blusa-propaganda.png" alt="">
                 </div>
                 <div class="card__destaque">
                     <div class="aviso__desconto">30% OFF</div>
-                    <div class="box__titulo__card__destaque">
-                        <h3 class="titulo__card__destaque">Coleção Adidas</h3>
+                    <div class="card__destaque__caixa__titulo">
+                        <h3 class="card__destaque__titulo">Coleção Adidas</h3>
                     </div>
-                    <a class="botao__card__destaque" href="">Comprar</a>
-                    <img class="imagem__card__destaque" src="./assets/img/sapato-propaganda.png" alt="">
+                    <button class="card__destaque__botao" href="">Comprar</button>
+                    <img class="card__destaque__imagem" src="./assets/img/sapato-propaganda.png" alt="">
                 </div>
                 <div class="card__destaque">
                     <div class="aviso__desconto">30% OFF</div>
-                    <div class="box__titulo__card__destaque">
-                        <h3 class="titulo__card__destaque">Novo Beats Bass</h3>
+                    <div class="card__destaque__caixa__titulo">
+                        <h3 class="card__destaque__titulo">Novo Beats Bass</h3>
                     </div>
-                    <a class="botao__card__destaque" href="">Comprar</a>
-                    <img class="imagem__card__destaque" src="./assets/img/fone-propaganda.png" alt="">
+                    <button class="card__destaque__botao" href="">Comprar</button>
+                    <img class="card__destaque__imagem" src="./assets/img/fone-propaganda.png" alt="">
                 </div>
             </div>
 
             <!-- COLEÇÃO DESTAQUE INFERIOR -->
             <div class="colecoes__destaque__inferior">
-                <h4 class="titulo__sessao">Coleções em destaque</h4>
+                <h4 class="titulo__secao">Coleções em destaque</h4>
                 <div class="grupo__cards__colecoes">
                     <div class="card__colecoes">
                         <div class="circulo__card__sessoes camisa">
@@ -138,82 +141,16 @@
             </div>
         </section>
 
-        <!-- SESSÃO PRODUTOS EM ALTA -->
-        <section class="produtos__alta max__width">
+        <!-- SEÇÃO PRODUTOS EM ALTA -->
+        <section class="produtos__alta">
             <div class="titulo__link">
-                <h4 class="titulo__sessao">Produtos em alta</h4>
-                    <a class="ver__todos" href="/">Ver todos</a>
+                <h4 class="titulo__secao">Produtos em alta</h4>
+                <a class="ver__todos" href="/">Ver todos</a>
             </div>
-            <div class="cards__produtos__alta max__width">
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <span class="aviso__desconto">30% OFF</span>
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <span class="aviso__desconto">30% OFF</span>
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
-                <div class="card__produto">
-                    <div class="background__card__produto">
-                        <img src="./assets/img/Layer1aa2.png" alt="tênis">
-                    </div>
-                    <p>Tênis</p>
-                    <p>K-Swiss V8 - Masculino</p>
-                    <p>$100</p>
-                </div>
+            <div class="cards__produtos__alta">
             </div>
         </section>
-        <!-- SESSÃO OFERTA ESPECIAL -->
+        <!-- SEÇÃO OFERTA ESPECIAL -->
         <section class="ofertas">
             <div class="ofertas__caixa max__width">
                 <article class="ofertas__imagem__col__esq">
@@ -291,5 +228,6 @@
         </div>
     </footer>
     <!-- ========== End RODAPÉ ========== -->
+
 </body>
 </html>

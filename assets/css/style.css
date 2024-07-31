@@ -7,7 +7,7 @@
 
 
 
-/***** VARIÁVEIS *****/
+/***** Start VARIÁVEIS *****/
 :root {
     /* CORES */
     --dark-gray: #1f1f1f;
@@ -26,6 +26,69 @@
     --white: #fff;
     --Tertiary: #991956;
 }
+.text_s_b {
+    color: var(--warning);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+}
+.text_x-s_b {
+    color: var(--dark-gray-2);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 157.143%;
+    letter-spacing: 0.05rem;
+}
+.text_t_b {
+    color: var(--light-gray);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 0.05rem;
+}
+.text_m-desktop {
+    color: var(--dark-gray);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 188.889%;
+    letter-spacing: 0.05rem;
+}
+.text_l-desktop {
+    color: var(--dark-gray-2);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 158.333%;
+    letter-spacing: 0.05rem;
+}
+.text_l_b {
+    color: var(--dark-gray);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 158.333%;
+    letter-spacing: 0.05rem;
+}
+.h1_t-desktop {
+    color: var(--dark-gray);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 103.125%;
+    letter-spacing: 0.06rem;
+}
 /***** End VARIÁVEIS *****/
 
 
@@ -33,7 +96,7 @@
 
 
 
-/***** GERAL *****/
+/***** Start GERAL *****/
 * {
     font-family: "Inter", sans-serif;
 }
@@ -47,7 +110,32 @@ body {
 
 
 
-/***** NAVBAR *****/
+/***** Start BUTTON *****/
+.primary-btn {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    color: var(--light-gray-3);
+
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    border: none;
+    transition: 0.2s;
+}
+.primary-btn:hover {
+    background-color: var(--Tertiary);
+    transition: 0.2s;
+    cursor: pointer;
+}
+/***** End BUTTON *****/
+
+
+
+
+
+
+/***** Start NAVBAR *****/
 header {
     display: flex;
     justify-content: center;
@@ -71,6 +159,7 @@ header {
     margin-right: 1.6875rem;
     max-width: 15.69rem;
     width: 100%;
+    flex: 1;
 }
 .logo__pesquisa {
     display: flex;
@@ -97,10 +186,10 @@ header {
 .lista__menu__link:hover {
     color: var(--primary);
     text-shadow: 
-        0.30px 0.30px 0px var(--primary),
-        -0.30px -0.30px 0px var(--primary),
-        0.30px -0.30px 0px var(--primary),
-        -0.30px 0.30px 0px var(--primary);
+        0.20px 0.20px 0.1px var(--primary),
+        -0.20px -0.20px 0.1px var(--primary),
+        0.20px -0.20px 0.1px var(--primary),
+        -0.20px 0.20px 0.1px var(--primary);
     padding-bottom: 0.06rem;
     border-bottom: 0.125rem solid var(--primary);
     transition: 0.3s;
@@ -140,22 +229,20 @@ header {
     text-wrap: nowrap;
     margin-right: 4.375rem;
 }
-.link__nav__cadastro {
+.links__nav > .link__cadastro {
     color: var(--dark-gray-2);
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-.link__nav__entrar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.links__nav > .primary-btn {
     height: 2.5rem;
     width: 7.12rem;
-    font-size: 0.87rem;
     font-weight: 700;
-    background-color: var(--primary);
-    color: #fff;
-    border-radius: 8px;
+    margin: 0;
+}
+.link__nav__entrar:hover {
+    background-color: var(--Tertiary);
+    transition: 0.2s;
 }
 .carrinho__nav {
     position: relative;
@@ -185,11 +272,11 @@ main {
     flex-direction: column;
     width: 100%;
 }
-.titulo__sessao {
-    font-size: 24px;
-    color: #474747;
+.titulo__secao {
+    font-size: 1.5rem;
+    color: var(--dark-gray-2);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .propaganda__inicial {
     display: flex;
@@ -197,6 +284,7 @@ main {
     padding: 7.75rem 0 3.31rem 0;
     width: 100%;
     background-color: #f5f5f5;
+    margin-bottom: 2.37rem;
 }
 .propaganda__inicial__child {
     display: flex;
@@ -204,7 +292,7 @@ main {
     max-width: 77.5rem;
     width: 100%;
 }
-.informacoes__imagem {
+.propaganda__inicial__informacoes__imagem {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -214,23 +302,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    height: 22rem;
     max-width: 31.87rem;
     width:100%;
     margin-right: 2rem;
-}
-.propaganda__inicial__informacoes h3 {
-    font-size: 1rem;
-    color: var(--warning);
-    font-weight: 700;
-    line-height: 1.5rem;
-}
-.propaganda__inicial__informacoes h1 {
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 4rem;
-    letter-spacing: 0.06rem;
-    line-height: 4.12rem;
 }
 .propaganda__inicial__informacoes h1::after {
     position: relative;
@@ -240,34 +314,26 @@ main {
     bottom: 0.5rem;
     left: 0.31rem;
 }
-.propaganda__inicial__informacoes p {
-    font-size: 1.12rem;
-    line-height: 2.12rem;
-}
-.botao__link__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.primary-btn {
     height: 3rem;
     max-width: 13.75rem;
     width: 100%;
-    background-color: var(--primary);
-    border-radius: 8px;
     margin-top: 20px;
-    cursor: pointer;
-    border: none;
-
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--white);
+}
+.botao__link__main:hover {
+    background-color: var(--Tertiary);
+    transition: 0.2s;
 }
 .propaganda__inicial__imagem {
     max-width: 37rem;
+    min-width: 20rem;
+    flex: 1;
 }
 .propaganda__inicial__imagem img {
     width: 100%;
 }
 .ornamento {
+    flex: 1;
     position: absolute;
     max-width: 8.75rem;
     right: -2rem;
@@ -282,98 +348,111 @@ main {
     height: 0.75rem;
     width: 100%;
 }
-
+/* COLEÇÕES DESTAQUE SUPERIOR */
 .colecoes__destaque {
-    padding-top: 38px;
+    max-width: 77.5rem;
+    width: 100%;
 }
 .espaco__cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    flex-direction: row;
     align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 6.25rem;
 }
 .card__destaque {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 251px;
-    width: 405px;
-    padding: 34px 0 35px 30px;
-    border-radius: 8px;
+    position: relative;
+    max-width: 25.31rem;
+    width: 100%;
+    padding: 2.12rem 0 2.19rem 1.87rem;
+    border-radius: 0.5rem;
     background-color: #d8e3f2;
-    gap: 10px;
+    gap: 0.62rem;
 }
 .aviso__desconto {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
-    width: 96px;
-    font-size: 14px;
+    height: 2rem;
+    width: 6rem;
+    font-size: 0.87rem;
     font-weight: 700;
-    border-radius: 29px;
+    border-radius: 1.81rem;
     color: #474747;
     background-color: #e7ff86;
 }
-.box__titulo__card__destaque {
-    height: 72px;
-    width: 184px;
+.card__destaque__caixa__titulo {
+    height: 4.5rem;
+    width: 11.5rem;
 }
-.titulo__card__destaque {
-    font-size: 32px;
+.card__destaque__titulo {
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
 }
-.botao__card__destaque {
+.card__destaque__botao {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 3rem;
-    width: 153px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 8px;
+    width: 9.56rem;
+    border-radius: 0.5rem;
     background-color: var(--white);
-    color: var(--primary);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     z-index: 1;
+    border: none;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+
+    transition: 0.2s;
 }
-.imagem__card__destaque {
+.card__destaque__botao:hover {
+    background-color: var(--secondary);
+    color: #f7f7fc;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card__destaque__imagem {
+    flex: 1;
     position: absolute;
     right: 0;
     bottom: 0;
     border-radius: 0.5rem;
 }
 
-/* SESSÃO COLEÇÕES EM DESTAQUE */
+/* COLEÇÕES EM DESTAQUE INFERIOR */
 .colecoes__destaque__inferior {
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-top: 100px;
+    margin-bottom: 7.69rem;
 }
 .grupo__cards__colecoes {
     display: flex;
-    flex-direction: inline;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
-    width: 712px;
-    height: 138px;
+    max-width: 77.5rem;
+    width: 100%;
 }
 .card__colecoes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 138px;
-    width: 104px;
+    height: 8.62rem;
+    width: 6.5rem;
 }
 .card__colecoes p {
     font-size: 14px;
     color: #474747;
     font-weight: 700;
 }
-.circulo__card__sessoes {
+.circulo__card__secoes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,7 +462,7 @@ main {
     background-color: var(--white);
     box-shadow: 0px 4px 25px 0px rgb(0, 0, 0, 0.05);
 }
-/* ICONES - COLEÇÃO DESTAQUE INFERIOR */
+/* ÍCONES - COLEÇÃO DESTAQUE INFERIOR */
 .camisa {
     background-image: url(../img/camisa-destaque-light-gray.png);
     background-position: center center;
@@ -449,14 +528,17 @@ main {
     background-repeat: no-repeat;
     transition: 0.3s;
 }
-/* SESSÃO PRODUTOS EM ALTA */
+/* SEÇÃO PRODUTOS EM ALTA */
+.produtos__alta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .titulo__link {
     display: flex;
     justify-content: space-between;
-    margin-top: 123px;
-}
-.titulo__link .titulo__sessao {
-    margin-bottom: 0;
+    max-width: 77.5rem;
+    width: 100%;
 }
 .ver__todos {
     position: relative;
@@ -484,23 +566,26 @@ main {
 }
 .cards__produtos__alta {
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 77.5rem;
+    width: 100%;
     row-gap: 40px;
     column-gap: 24px;
 }
 .card__produto {
-    width: 292px;
-    height: 439px;
+    max-width: 18.25rem;
+    width: 100%;
+    height: 27.44rem;
 }
 .background__card__produto {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 292px;
-    height: 321px;
+    width: 100%;
+    height: 20.06rem;
     background-color: var(--white);
+    margin-bottom: 1.12rem;
 }
 .background__card__produto .aviso__desconto {
     position: absolute;
@@ -509,37 +594,17 @@ main {
 }
 .background__card__produto img {
     align-self: center;
-    margin: 23% 0;
+    margin: auto;
 }
-.card__produto p:nth-child(2) {
-    margin-top: 18px;
-    font-size: 12px;
-    line-height: 24px;
+.card__produto div {
+    display: flex;
+    gap: 0.69rem;
+}
+.card__produto div > .Text_Large-Desktop {
     color: var(--light-gray);
-}
-.card__produto p:nth-child(3) {
-    font-size: 24px;
-    color: var(--dark-gray-2);
-    line-height: 38px;
-}
-.card__produto p:nth-child(4) {
-    position: relative;
-    left: 11px;
-    content: "$200";
-    font-size: 24px;
-    color: var(--dark-gray);
-    font-weight: 700;
-}
-.card__produto p:nth-child(4)::before {
-    position: relative;
-    right: 11px;
-    content: "$200";
-    font-size: 24px;
-    color: var(--light-gray);
-    font-weight: 400;
     text-decoration-line: line-through;
 }
-/* SESSÃO OFERTAS */
+/* SEÇÃO OFERTAS */
 .ofertas {
     display: flex;
     justify-content: center;
