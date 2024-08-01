@@ -8,14 +8,14 @@ function cards () {
         cardContainer.innerHTML += `
         <div class="card__produto">
             <div class="background__card__produto">
-            ${i < 2 ? '<small class="aviso__desconto Text_X-Small_B">30% OFF</small>' : ''}
+            ${i < 2 ? '<small class="aviso__desconto text_x-s_b">30% OFF</small>' : ''}
             <img src="./assets/img/Layer1aa2.png" alt="tênis">
             </div>
-            <p class="Text_Tinny_B">Tênis</p>
-            <p class="Text_Large-Desktop">K-Swiss V8 - Masculino</p>
+            <p class="text_t_b">Tênis</p>
+            <p class="text_l-desktop">K-Swiss V8 - Masculino</p>
             <div>
-                <p class="Text_Large-Desktop">$200</p>
-                <p class="Text_Large_B">$100</p>
+                <p class="text_l-desktop">$200</p>
+                <p class="text_l_b">$100</p>
             </div>
 
         </div>
