@@ -119,6 +119,7 @@
     font-family: "Inter", sans-serif;
 }
 body {
+    position: relative;
     background-color: #f9f8fe;
 }
 /***** End GERAL *****/
@@ -182,55 +183,119 @@ body {
 
 
 
-/***** Start HEADER *****/
+/***** Start NAVBAR *****/
 header {
-    background-color: var(--white);
-}
-header > .nav-mobile {
     display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.nav-desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 2.13rem 0 1.81rem 0;
+    max-width: 77.5rem;
+    width: 100%;
+    gap: 2.5rem;
+}
+.nav__superior {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
-    padding: 1.25rem;
 }
-.nav-mobile > .nav-botao {
-    border: none;
-    background-color: inherit;
-    margin-right: 4.62rem;
-}
-.nav-mobile > a > img {
-    max-width: 8.63rem;
+.nav__superior picture {
+    margin-right: 1.6875rem;
+    max-width: 15.69rem;
     width: 100%;
-    margin-right: 4.04rem;
+    flex: 1;
 }
-.nav-mobile > .nav-icone {
-    display: flex;
-    align-items: end;
+.nav__superior .caixa__pesquisa__nav {
     position: relative;
-    gap: 0.81rem;
-    width: 4.125rem;
+    max-inline-size: 34.9375rem;
+    inline-size: 100%;
+    border: none;
+    margin-right: 3rem;
+    box-sizing: border-box;
 }
-.nav-icone > a {
-    width: fit-content;
-    height: fit-content;
-}
-.nav-icone a .lupa {
-    width: 1.25rem;
-    height: 1.25rem;
-}
-.lupa g circle,
-.lupa g path {
-    stroke: var(--light-gray-2);
-}
-.carrinho-digito {
-    position: absolute;
-    right: 0.3rem;
-    top: 0.09rem;
-    color: var(--white);
+.nav__superior .caixa__pesquisa__nav .input__pesquisa__nav {
+    height: 3.75rem;
+    border: none;
+    outline: none;
+    padding: 0 2.8125rem 0 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+    inline-size: 100%;
     
+    color: var(--dark-gray-2);
+    opacity: 0.6;
+    font-size: 1rem;
+}
+.nav__superior .caixa__pesquisa__nav .lupa__pesquisa__nav {
+    float: auto;
+    position: absolute;
+    top: 1.125rem;
+    right: 1rem;
+}
+.nav__superior .links__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    text-wrap: nowrap;
+    margin-right: 4.375rem;
+}
+.nav__superior .links__nav > .link__cadastro {
+    color: var(--dark-gray-2);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.nav__superior .links__nav > .primary-btn {
+    height: 2.5rem;
+    width: 7.12rem;
+    font-weight: 700;
+    margin: 0;
+}
+.nav__superior .carrinho__nav {
+    position: relative;
+    height: 1.8125rem;
+    width: 2.0625rem;
+    cursor: pointer;
+}
+.nav__superior .digito__carrinho__nav {
+    position: absolute;
+    top: 0.06rem;
+    left: 1.31rem;
+    color: white;
     font-size: 0.75rem;
 }
-/***** End HEADER *****/
+.nav__inferior {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: nowrap;
+    gap: 2rem;
+}
+.nav__inferior .lista__menu__link {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--dark-gray-2);
+    transition: 0.3s;
+    padding-bottom: 0.06rem;
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.00);
+    line-height: 150%;
+}
+.nav__inferior .lista__menu__link:hover {
+    color: var(--primary);
+    text-shadow: 
+        0.20px 0.20px 0.1px var(--primary),
+        -0.20px -0.20px 0.1px var(--primary),
+        0.20px -0.20px 0.1px var(--primary),
+        -0.20px 0.20px 0.1px var(--primary);
+    padding-bottom: 0.06rem;
+    border-bottom: 0.125rem solid var(--primary);
+    transition: 0.3s;
+}
+/***** End NAVBAR *****/
 
 
 
@@ -296,6 +361,7 @@ main {
     width: 100%;
 }
 .ornamento {
+    position: absolute;
     max-width: 8.75rem;
     width: 100%;
     right: -2rem;
@@ -496,16 +562,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 29.125rem;
-    width: 100%;
-    max-height: 29.125rem;
-    height: 100%;
+    width: 29.125rem;
+    height: 29.125rem;
     border-radius: 29.125rem;
     background: var(--secondary-gradient);
 }
 .ofertas__imagem {
-    max-width: 35.81rem;
-    width: 100%;
+    width: 35.81rem;
     position: relative;
     top: -2.5rem;
     left: -1.5rem;
@@ -532,3 +595,117 @@ main {
 }
 /***** End Section *****/
 
+
+
+
+
+
+/***** RODAPÉ *****/
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem 6.25rem 0 6.25rem;
+    align-items: center;
+    width: 100%;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+footer article ul li a {
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.caixa__footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer__superior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer__marca {
+    display: flex;
+    flex-direction: column;
+}
+.footer__marca img {
+    width: 253px;
+    height: 44px;
+    margin-bottom: 35px;
+}
+.footer__marca p {
+    font-size: 16px;
+    color: var(--white);
+    letter-spacing: none;
+    line-height: 26px;
+    width: 307px;
+    height: 78px;
+    margin-bottom: 40px;
+}
+.footer__marca .redes__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 124.12px;
+    height: 20.53px;
+}
+.redes__footer a img {
+    height: 20.53px;
+    width: auto;
+}
+.footer__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 278px;
+    width: 135px;
+    margin-left: 205px;
+}
+.footer__informacoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 240px;
+    width: 96px;
+    margin-left: 102px;
+}
+.footer__categorias ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: 168px;
+    width: 233px;
+    margin-left: 168px;
+    font-weight: 300;
+}
+.linha__footer {
+    margin-top: 34px;
+    border-bottom: 1px solid var(--white);
+    max-width: 77.5rem;
+    width: 100%;
+}
+.footer__inferior {
+    margin-top: 23px;
+}
+/***** End RODAPÉ *****/
+
+
+
+
+
+
+@media (min-width: 375px) {
+
+
+
+}
